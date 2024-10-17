@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio-JSA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+    <div class="">
+        <nav class="navbar bg-warning">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 1052 1052">
+                        <path fill="#f0db4f" d="M0 0h1052v1052H0z" />
+                        <path
+                            d="M965.9 801.1c-7.7-48-39-88.3-131.7-125.9-32.2-14.8-68.1-25.399-78.8-49.8-3.8-14.2-4.3-22.2-1.9-30.8 6.9-27.9 40.2-36.6 66.6-28.6 17 5.7 33.1 18.801 42.8 39.7 45.4-29.399 45.3-29.2 77-49.399-11.6-18-17.8-26.301-25.4-34-27.3-30.5-64.5-46.2-124-45-10.3 1.3-20.699 2.699-31 4-29.699 7.5-58 23.1-74.6 44-49.8 56.5-35.6 155.399 25 196.1 59.7 44.8 147.4 55 158.6 96.9 10.9 51.3-37.699 67.899-86 62-35.6-7.4-55.399-25.5-76.8-58.4-39.399 22.8-39.399 22.8-79.899 46.1 9.6 21 19.699 30.5 35.8 48.7 76.2 77.3 266.899 73.5 301.1-43.5 1.399-4.001 10.6-30.801 3.199-72.101zm-394-317.6h-98.4c0 85-.399 169.4-.399 254.4 0 54.1 2.8 103.7-6 118.9-14.4 29.899-51.7 26.2-68.7 20.399-17.3-8.5-26.1-20.6-36.3-37.699-2.8-4.9-4.9-8.7-5.601-9-26.699 16.3-53.3 32.699-80 49 13.301 27.3 32.9 51 58 66.399 37.5 22.5 87.9 29.4 140.601 17.3 34.3-10 63.899-30.699 79.399-62.199 22.4-41.3 17.6-91.3 17.4-146.6.5-90.2 0-180.4 0-270.9z"
+                            fill="#323330" />
+                    </svg>
+                    PORTAFOLIO DE EJERCICIOS
+                </a>
+            </div>
+        </nav>
+
+        <!--CONTENIDO-->
+        <div class="container pt-5">
+            <a href="../index.html"><i class="bi bi-arrow-return-left"></i> Regresar</a>
+            <ul class="list-inline">
+                <a href="#semana5">
+                    <li class="list-inline-item">Semana 5</li>
+                </a>
+                <a href="#semana6">
+                    <li class="list-inline-item">Semana 6</li>
+                </a>
+                <a href="#semana7">
+                    <li class="list-inline-item">Semana 7</li>
+                </a>
+                <a href="#semana8">
+                    <li class="list-inline-item">Semana 8</li>
+                </a>
+            </ul>
+        </div>
+
+        <!--SEMANA 5 -->
+        <div class="container pt-5" id="semana5">
+            <h2 class="bg-warning text-light">Semana 5</h2>
+            <h4 class="bg-danger text-light">PC 1</h4>
+        </div>
+
+        <!--SEMANA 6 -->
+        <div class="container pt-5" id="semana6">
+            <h2 class="bg-warning text-light">Semana 6</h2>
+            <div class="container mt-5">
+                <div class="mb-4">
+                    <h2>Ejercicio 1: Crear un Objeto y Acceder a sus Propiedades</h2>
+                    <button class="btn btn-primary" onclick="mostrarPersona()">Mostrar Datos de Persona</button>
+                    <p id="personaDatos" class="mt-2"></p>
+                </div>
+
+                <!-- Ejercicio 2: Métodos en Objetos -->
+                <div class="mb-4">
+                    <h2>Ejercicio 2: Métodos en Objetos</h2>
+                    <button class="btn btn-primary" onclick="saludarPersona()">Saludar Persona</button>
+                    <p id="saludoPersona" class="mt-2"></p>
+                </div>
+
+                <!-- Ejercicio 3: Arreglo de Objetos -->
+                <div class="mb-4">
+                    <h2>Ejercicio 3: Arreglo de Libros</h2>
+                    <button class="btn btn-primary" onclick="mostrarLibros()">Mostrar Libros</button>
+                    <ul id="librosLista" class="list-group mt-2"></ul>
+                </div>
+
+                <!-- Ejercicio 4: Actualizar Propiedades de un Objeto -->
+                <div class="mb-4">
+                    <h2>Ejercicio 4: Actualizar Propiedades de un Objeto</h2>
+                    <button class="btn btn-primary" onclick="actualizarAnioVehiculo()">Actualizar Año de
+                        Vehículo</button>
+                    <p id="vehiculoDatos" class="mt-2"></p>
+                </div>
+
+                <!-- Ejercicio 5: Filtrar Arreglo de Objetos -->
+                <div class="mb-4">
+                    <h2>Ejercicio 5: Filtrar Estudiantes con Nota Mayor o Igual a 7</h2>
+                    <button class="btn btn-primary" onclick="filtrarEstudiantes()">Filtrar Estudiantes</button>
+                    <ul id="estudiantesFiltrados" class="list-group mt-2"></ul>
+                </div>
+
+            </div>
+
+        </div>
+        <!--SEMANA 7-->
+        <div class="container pt-5" id="semana7">
+            <h2 class="bg-warning text-light">Semana 7</h2>
+            <h3>SERVIDOR CON EXPRESS.JS</h3>
+            <div class="mt-4">
+                <img src="../img/ser1.PNG" class="img-fluid mb-3" alt="Ingreso de dato">
+                <img src="../img/ser2.PNG" class="img-fluid mb-3" alt="Recepcionar y mostrar dato">
+                <img src="../img/ser3.PNG" class="img-fluid mb-3" alt="Codigo de servidor.js">
+            </div>
+
+
+        </div>
+        <!--SEMANA 8-->
+        <div class="container pt-5" id="semana8">
+            <h2 class="bg-warning text-light">Semana 8</h2>
+            <h3>Modulo http</h3>
+
+            <div class="mt-4">
+                <img src="../img/ser8.png" class="img-fluid mb-3" alt="mostraro de dato">
+                
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!--SCRIPT SEMANA 5-->
+    <!--SCRIPT SEMANA 6-->
+    <script>
+        // Ejercicio 1: Crear un Objeto y Acceder a sus Propiedades
+        const persona = {
+            nombre: 'Ana',
+            edad: 28,
+            profesion: 'Ingeniera'
+        };
+        function mostrarPersona() {
+            document.getElementById('personaDatos').innerText = `Nombre: ${persona.nombre}, Edad: ${persona.edad}, Profesión: ${persona.profesion}`;
+        }
+
+        // Ejercicio 2: Métodos en Objetos
+        persona.saludar = function () {
+            return `Hola, mi nombre es ${this.nombre}`;
+        };
+        function saludarPersona() {
+            document.getElementById('saludoPersona').innerText = persona.saludar();
+        }
+
+        // Ejercicio 3: Arreglo de Objetos
+        const libros = [
+            { titulo: '1984', autor: 'George Orwell', año: 1949 },
+            { titulo: 'El Principito', autor: 'Antoine de Saint-Exupéry', año: 1943 },
+            { titulo: 'Cien años de soledad', autor: 'Gabriel García Márquez', año: 1967 }
+        ];
+        function mostrarLibros() {
+            const lista = document.getElementById('librosLista');
+            lista.innerHTML = '';
+            libros.forEach(libro => {
+                const item = document.createElement('li');
+                item.classList.add('list-group-item');
+                item.innerText = `Título: ${libro.titulo}, Autor: ${libro.autor}`;
+                lista.appendChild(item);
+            });
+        }
+
+        // Ejercicio 4: Actualizar Propiedades de un Objeto
+        const vehiculo = {
+            marca: 'Toyota',
+            modelo: 'Corolla',
+            año: 2018
+        };
+        function actualizarAnioVehiculo() {
+            vehiculo.año = 2024;
+            document.getElementById('vehiculoDatos').innerText = `Marca: ${vehiculo.marca}, Modelo: ${vehiculo.modelo}, Año: ${vehiculo.año}`;
+        }
+
+        // Ejercicio 5: Filtrar Estudiantes con Nota Mayor o Igual a 7
+        const estudiantes = [
+            { nombre: 'Laura', nota: 6 },
+            { nombre: 'Carlos', nota: 8 },
+            { nombre: 'Marta', nota: 7 },
+            { nombre: 'Luis', nota: 5 },
+            { nombre: 'Ana', nota: 9 }
+        ];
+        function filtrarEstudiantes() {
+            const listaFiltrada = estudiantes.filter(estudiante => estudiante.nota >= 7);
+            const lista = document.getElementById('estudiantesFiltrados');
+            lista.innerHTML = '';
+            listaFiltrada.forEach(estudiante => {
+                const item = document.createElement('li');
+                item.classList.add('list-group-item');
+                item.innerText = `Nombre: ${estudiante.nombre}, Nota: ${estudiante.nota}`;
+                lista.appendChild(item);
+            });
+        }
+    </script>
+    <!--SCRIPT SEMANA 7-->
+    <!--SCRIPT SEMANA 8-->
+
+</body>
+
+</html>

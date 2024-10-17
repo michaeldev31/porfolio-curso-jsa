@@ -59,9 +59,10 @@
                 </a>
             </ul>
         </div>
-
+        
+        <!--SEMANA 1 -->
         <div class="container pt-5" id="semana1">
-            <h2>Semana 1</h2>
+            <h2 class="bg-warning text-light">Semana 1</h2>
             <div class="row mt-3">
                 <div class="col">
                     <div class="card mb-3">
@@ -217,15 +218,185 @@
 
         <!--SEMANA 2 -->
         <div class="container pt-5" id="semana2">
-            <h2>Semana 2</h2>
+            <h2 class="bg-warning text-light">Semana 2</h2>
+            <div class="container mt-5">
+
+                <div class="mb-5">
+                    <h2>Ejercicio 1: Número positivo o negativo</h2>
+                    <input type="number" id="numero" class="form-control" placeholder="Introduce un número">
+                    <button class="btn btn-primary mt-2" onclick="verificarNumero()">Verificar</button>
+                    <p id="resultado1"></p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>Ejercicio 2: Año bisiesto</h2>
+                    <input type="number" id="ano" class="form-control" placeholder="Introduce un año">
+                    <button class="btn btn-primary mt-2" onclick="verificarBisiesto()">Verificar</button>
+                    <p id="resultado2"></p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>Ejercicio 3: Palíndromo</h2>
+                    <input type="text" id="texto" class="form-control" placeholder="Introduce una palabra o frase">
+                    <button class="btn btn-primary mt-2" onclick="verificarPalindromo()">Verificar</button>
+                    <p id="resultado3"></p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>Ejercicio 4: Mayor de tres edades</h2>
+                    <input type="number" id="edad1" class="form-control" placeholder="Edad 1">
+                    <input type="number" id="edad2" class="form-control mt-2" placeholder="Edad 2">
+                    <input type="number" id="edad3" class="form-control mt-2" placeholder="Edad 3">
+                    <button class="btn btn-primary mt-2" onclick="determinarMayor()">Determinar Mayor</button>
+                    <p id="resultado4"></p>
+                </div>
+
+                <div class="mb-5">
+                    <h2>Ejercicio 5: Mayor de edad</h2>
+                    <input type="number" id="edad" class="form-control" placeholder="Introduce tu edad">
+                    <button class="btn btn-primary mt-2" onclick="verificarEdad()">Verificar</button>
+                    <p id="resultado5"></p>
+                </div>
+            </div>
         </div>
         <!--SEMANA 3-->
         <div class="container pt-5" id="semana3">
-            <h2>Semana 3</h2>
+            <h2 class="bg-warning text-light">Semana 3</h2>
+            <div class="container mt-5">
+
+                <!-- Ejercicio 1: Menú de Aplicación -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2>Ejercicio 1: Menú de Aplicación</h2>
+                    </div>
+                    <div class="card-body">
+                        <label for="menuOption">Selecciona una opción del menú:</label>
+                        <select id="menuOption" class="form-select">
+                            <option value="1">1. Ver perfil</option>
+                            <option value="2">2. Editar perfil</option>
+                            <option value="3">3. Configuración</option>
+                            <option value="4">4. Salir</option>
+                        </select>
+                        <button onclick="mostrarMenu()" class="btn btn-primary mt-3">Mostrar opción</button>
+                        <p id="menuResult" class="mt-2"></p>
+                    </div>
+                </div>
+
+                <!-- Ejercicio 2: Calculadora -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2>Ejercicio 2: Calculadora</h2>
+                    </div>
+                    <div class="card-body">
+                        <input type="number" id="num1" class="form-control mb-2" placeholder="Número 1">
+                        <input type="number" id="num2" class="form-control mb-2" placeholder="Número 2">
+                        <select id="operation" class="form-select mb-2">
+                            <option value="suma">Suma</option>
+                            <option value="resta">Resta</option>
+                            <option value="multiplicacion">Multiplicación</option>
+                            <option value="division">División</option>
+                        </select>
+                        <button onclick="calcularOperacion()" class="btn btn-primary">Calcular</button>
+                        <p id="calcResult" class="mt-2"></p>
+                    </div>
+                </div>
+
+                <!-- Ejercicio 3: Plan de Tarifas de Internet -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2>Ejercicio 3: Plan de Tarifas de Internet</h2>
+                    </div>
+                    <div class="card-body">
+                        <input type="number" id="datosUsados" class="form-control mb-2"
+                            placeholder="Datos usados en GB">
+                        <button onclick="calcularCostoInternet()" class="btn btn-primary">Calcular Costo</button>
+                        <p id="costoResult" class="mt-2"></p>
+                    </div>
+                </div>
+
+                <!-- Ejercicio 4: Clasificación de Empleados -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2>Ejercicio 4: Clasificación de Empleados</h2>
+                    </div>
+                    <div class="card-body">
+                        <input type="number" id="antiguedad" class="form-control mb-2" placeholder="Años de antigüedad">
+                        <button onclick="clasificarEmpleado()" class="btn btn-primary">Clasificar Empleado</button>
+                        <p id="clasificacionResult" class="mt-2"></p>
+                    </div>
+                </div>
+
+                <!-- Ejercicio 5: Predicción del Clima -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2>Ejercicio 5: Predicción del Clima</h2>
+                    </div>
+                    <div class="card-body">
+                        <select id="clima" class="form-select mb-2">
+                            <option value="frio">Frío</option>
+                            <option value="templado">Templado</option>
+                            <option value="calido">Cálido</option>
+                        </select>
+                        <button onclick="recomendacionVestimenta()" class="btn btn-primary">Mostrar
+                            Recomendación</button>
+                        <p id="climaResult" class="mt-2"></p>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <!--SEMANA 4-->
         <div class="container pt-5" id="semana4">
-            <h2>Semana 4</h2>
+            <h2 class="bg-warning text-light" >Semana 4</h2>
+            <div class="mb-4">
+                <h2>1. Generar Matriz de Identidad</h2>
+                <div class="input-group mb-3">
+                    <input id="inputMatriz" type="number" class="form-control" placeholder="Tamaño de la matriz (n)"
+                        aria-label="Tamaño de la matriz">
+                    <button class="btn btn-primary" onclick="generarMatriz()">Generar</button>
+                </div>
+                <pre id="resultadoMatriz"></pre>
+            </div>
+
+            <!-- Ejercicio 2: Palíndromos -->
+            <div class="mb-4">
+                <h2>2. Encontrar Palíndromos</h2>
+                <div class="input-group mb-3">
+                    <input id="inputPalindromos" type="text" class="form-control"
+                        placeholder="Ingresa palabras separadas por comas" aria-label="Lista de palabras">
+                    <button class="btn btn-primary" onclick="encontrarPalindromos()">Buscar</button>
+                </div>
+                <pre id="resultadoPalindromos"></pre>
+            </div>
+
+            <!-- Ejercicio 3: Números Primos -->
+            <div class="mb-4">
+                <h2>3. Generar Números Primos</h2>
+                <div class="input-group mb-3">
+                    <input id="inputPrimos" type="number" class="form-control" placeholder="Número límite (n)"
+                        aria-label="Número límite">
+                    <button class="btn btn-primary" onclick="generarPrimos()">Generar</button>
+                </div>
+                <pre id="resultadoPrimos"></pre>
+            </div>
+
+            <!-- Ejercicio 4: Tablero de Ajedrez -->
+            <div class="mb-4">
+                <h2>4. Imprimir Tablero de Ajedrez</h2>
+                <button class="btn btn-primary mb-3" onclick="imprimirTablero()">Imprimir Tablero</button>
+                <pre id="resultadoTablero"></pre>
+            </div>
+
+            <!-- Ejercicio 5: Media y Desviación Estándar -->
+            <div class="mb-4">
+                <h2>5. Calcular Media y Desviación Estándar</h2>
+                <div class="input-group mb-3">
+                    <input id="inputNumeros" type="text" class="form-control"
+                        placeholder="Ingresa números separados por comas" aria-label="Lista de números">
+                    <button class="btn btn-primary" onclick="calcularMediaYDesviacion()">Calcular</button>
+                </div>
+                <pre id="resultadoEstadisticas"></pre>
+            </div>
         </div>
 
 
@@ -234,6 +405,254 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!--SCRIPT SEMANA 2-->
+    <script>
+        function verificarNumero() {
+            const numero = parseFloat(document.getElementById('numero').value);
+            let mensaje = '';
+            if (numero > 0) {
+                mensaje = 'El número es positivo';
+            } else if (numero < 0) {
+                mensaje = 'El número es negativo';
+            } else {
+                mensaje = 'El número es cero';
+            }
+            document.getElementById('resultado1').innerText = mensaje;
+        }
+
+        function verificarBisiesto() {
+            const ano = parseInt(document.getElementById('ano').value);
+            let mensaje = '';
+            if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+                mensaje = 'El año es bisiesto';
+            } else {
+                mensaje = 'El año no es bisiesto';
+            }
+            document.getElementById('resultado2').innerText = mensaje;
+        }
+
+        function verificarPalindromo() {
+            const texto = document.getElementById('texto').value.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+            const textoReverso = texto.split('').reverse().join('');
+            let mensaje = '';
+            if (texto === textoReverso) {
+                mensaje = 'Es un palíndromo';
+            } else {
+                mensaje = 'No es un palíndromo';
+            }
+            document.getElementById('resultado3').innerText = mensaje;
+        }
+
+        function determinarMayor() {
+            const edad1 = parseInt(document.getElementById('edad1').value);
+            const edad2 = parseInt(document.getElementById('edad2').value);
+            const edad3 = parseInt(document.getElementById('edad3').value);
+            let mayor = edad1;
+            if (edad2 > mayor) {
+                mayor = edad2;
+            }
+            if (edad3 > mayor) {
+                mayor = edad3;
+            }
+            document.getElementById('resultado4').innerText = `La edad mayor es: ${mayor}`;
+        }
+
+        function verificarEdad() {
+            const edad = parseInt(document.getElementById('edad').value);
+            let mensaje = '';
+            if (edad >= 18) {
+                mensaje = 'Eres mayor de edad';
+            } else {
+                mensaje = 'Eres menor de edad';
+            }
+            document.getElementById('resultado5').innerText = mensaje;
+        }
+    </script>
+
+    <!--SCRIPT SEMANA 3-->
+    <script>
+        // Ejercicio 1: Menú de Aplicación
+        function mostrarMenu() {
+            const opcion = parseInt(document.getElementById("menuOption").value);
+            let resultado;
+            switch (opcion) {
+                case 1:
+                    resultado = "Visualizando perfil...";
+                    break;
+                case 2:
+                    resultado = "Editando perfil...";
+                    break;
+                case 3:
+                    resultado = "Accediendo a configuración...";
+                    break;
+                case 4:
+                    resultado = "Saliendo de la aplicación...";
+                    break;
+                default:
+                    resultado = "Opción inválida.";
+            }
+            document.getElementById("menuResult").innerText = resultado;
+        }
+
+        // Ejercicio 2: Calculadora
+        function calcularOperacion() {
+            const num1 = parseFloat(document.getElementById("num1").value);
+            const num2 = parseFloat(document.getElementById("num2").value);
+            const operacion = document.getElementById("operation").value;
+            let resultado;
+            switch (operacion) {
+                case 'suma':
+                    resultado = num1 + num2;
+                    break;
+                case 'resta':
+                    resultado = num1 - num2;
+                    break;
+                case 'multiplicacion':
+                    resultado = num1 * num2;
+                    break;
+                case 'division':
+                    resultado = num2 !== 0 ? num1 / num2 : "Error: División por cero no permitida.";
+                    break;
+                default:
+                    resultado = "Operación no válida.";
+            }
+            document.getElementById("calcResult").innerText = "Resultado: " + resultado;
+        }
+
+        // Ejercicio 3: Plan de Tarifas de Internet
+        function calcularCostoInternet() {
+            const datosUsados = parseInt(document.getElementById("datosUsados").value);
+            let costo;
+            switch (true) {
+                case (datosUsados <= 50):
+                    costo = 30;
+                    break;
+                case (datosUsados <= 200):
+                    costo = 60;
+                    break;
+                case (datosUsados > 200):
+                    costo = 90;
+                    break;
+                default:
+                    costo = "Datos inválidos.";
+            }
+            document.getElementById("costoResult").innerText = "Costo mensual: $" + costo;
+        }
+
+        // Ejercicio 4: Clasificación de Empleados
+        function clasificarEmpleado() {
+            const antiguedad = parseInt(document.getElementById("antiguedad").value);
+            let categoria;
+            switch (true) {
+                case (antiguedad < 1):
+                    categoria = "Nuevo";
+                    break;
+                case (antiguedad >= 1 && antiguedad <= 5):
+                    categoria = "Intermedio";
+                    break;
+                case (antiguedad > 5):
+                    categoria = "Experto";
+                    break;
+                default:
+                    categoria = "Antigüedad inválida.";
+            }
+            document.getElementById("clasificacionResult").innerText = "Categoría del empleado: " + categoria;
+        }
+
+        // Ejercicio 5: Predicción del Clima
+        function recomendacionVestimenta() {
+            const clima = document.getElementById("clima").value;
+            let recomendacion;
+            switch (clima) {
+                case 'frio':
+                    recomendacion = "Lleva un abrigo y guantes.";
+                    break;
+                case 'templado':
+                    recomendacion = "Una chaqueta ligera es suficiente.";
+                    break;
+                case 'calido':
+                    recomendacion = "Ropa ligera y protección solar.";
+                    break;
+                default:
+                    recomendacion = "Clima no reconocido.";
+            }
+            document.getElementById("climaResult").innerText = recomendacion;
+        }
+    </script>
+
+    <!--SCRIPT SEMANA 4-->
+    <script>
+        // Ejercicio 1: Matriz de Identidad
+        function generarMatriz() {
+            const n = parseInt(document.getElementById('inputMatriz').value);
+            let matriz = '';
+            for (let i = 0; i < n; i++) {
+                let fila = '';
+                for (let j = 0; j < n; j++) {
+                    fila += (i === j ? '1 ' : '0 ');
+                }
+                matriz += fila + '\n';
+            }
+            document.getElementById('resultadoMatriz').textContent = matriz;
+        }
+
+        // Ejercicio 2: Palíndromos
+        function encontrarPalindromos() {
+            const palabras = document.getElementById('inputPalindromos').value.split(',');
+            const palindromos = [];
+            for (let palabra of palabras) {
+                palabra = palabra.trim();
+                if (palabra === palabra.split('').reverse().join('')) {
+                    palindromos.push(palabra);
+                }
+            }
+            document.getElementById('resultadoPalindromos').textContent = 'Palíndromos: ' + palindromos.join(', ');
+        }
+
+        // Ejercicio 3: Números Primos
+        function generarPrimos() {
+            const n = parseInt(document.getElementById('inputPrimos').value);
+            const primos = [];
+            for (let i = 2; i <= n; i++) {
+                let esPrimo = true;
+                for (let j = 2; j <= Math.sqrt(i); j++) {
+                    if (i % j === 0) {
+                        esPrimo = false;
+                        break;
+                    }
+                }
+                if (esPrimo) {
+                    primos.push(i);
+                }
+            }
+            document.getElementById('resultadoPrimos').textContent = 'Primos: ' + primos.join(', ');
+        }
+
+        // Ejercicio 4: Tablero de Ajedrez
+        function imprimirTablero() {
+            let tablero = '';
+            const simbolos = ['#', '.'];
+            for (let i = 0; i < 8; i++) {
+                let fila = '';
+                for (let j = 0; j < 8; j++) {
+                    fila += simbolos[(i + j) % 2] + ' ';
+                }
+                tablero += fila + '\n';
+            }
+            document.getElementById('resultadoTablero').textContent = tablero;
+        }
+
+        // Ejercicio 5: Media y Desviación Estándar
+        function calcularMediaYDesviacion() {
+            const numeros = document.getElementById('inputNumeros').value.split(',').map(Number);
+            const n = numeros.length;
+            const media = numeros.reduce((a, b) => a + b, 0) / n;
+            const varianza = numeros.reduce((acum, num) => acum + Math.pow(num - media, 2), 0) / n;
+            const desviacion = Math.sqrt(varianza);
+
+            document.getElementById('resultadoEstadisticas').textContent = `Media: ${media.toFixed(2)}, Desviación Estándar: ${desviacion.toFixed(2)}`;
+        }
+    </script>
 </body>
 
 </html>
